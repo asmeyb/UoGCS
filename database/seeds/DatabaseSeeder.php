@@ -20,5 +20,6 @@ class DatabaseSeeder extends Seeder
         $this->call(AdmittypesTableSeeder::class);
         $this->call(BloodGroupsTableSeeder::class);
         $this->call(AttendancesTableSeeder::class);
+        $this->call(WeredasTableSeeder::class);
     }
 }

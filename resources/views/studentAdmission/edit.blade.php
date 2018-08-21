@@ -81,7 +81,7 @@
                             <label for="studentCountry">Country</label>
                             <div class="form-group">                                
                                 <select name="studentCountry" class="form-control form-control-lg">
-                                    <option value="0">Please select</option>
+                                    <option value="{{$studentAdmission->name}}">{{$studentAdmission->name}}</option>
                                     @foreach($countrys as $country)
                                         <option value="{{$country->name}}">{{$country->name}}</option>
                                     @endforeach
@@ -93,7 +93,7 @@
                             <label for="studentRegion">Region</label>
                             <div class="form-group">                                
                                 <select name="studentRegion" class="form-control form-control-lg">
-                                    <option value="">Please select</option>
+                                    <option value="{{$studentAdmission->name}}">{{$studentAdmission->name}}</option>
                                     @foreach($regions as $region)
                                         <option value="{{$region->name}}">{{$region->name}}</option>
                                     @endforeach
@@ -104,7 +104,7 @@
                             <label for="studentZone">Zone</label>
                             <div class="form-group">                                
                                 <select name="studentZone" class="form-control form-control-lg">
-                                    <option>Please select</option>
+                                    <option value="{{$studentAdmission->name}}">{{$studentAdmission->name}}</option>
                                     @foreach($zones as $zone)
                                         <option value="{{$zone->name}}">{{$zone->name}}</option>
                                     @endforeach
@@ -115,7 +115,7 @@
                             <label for="studentWoreda">Woreda</label>
                             <div class="form-group">                                
                                 <select name="studentWoreda" class="form-control form-control-lg">
-                                    <option>Please select</option>
+                                    <option value="{{$studentAdmission->name}}">{{$studentAdmission->name}}</option>
                                     @foreach($woredas as $woreda)
                                         <option value="{{$woreda->name}}">{{$woreda->name}}</option>
                                     @endforeach

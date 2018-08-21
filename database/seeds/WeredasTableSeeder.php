@@ -12,11 +12,9 @@ class WeredasTableSeeder extends Seeder
     public function run()
     {
         App\Wereda::create([
-            'country_id' => 1,
-            'region_id' => 1,
             'name' => 'Gondar',
             'code' => 'NG',
-            'zone' => 'North Gondar',
+            'zone_id' => 1,
             'description' => 'Found in the North of Amhara Region'
         ]);
     }
