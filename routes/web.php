@@ -158,14 +158,14 @@ Route::get('setup/staffs', ['uses'=>'StaffController@index', 'as'=>'setup.staffs
 	Route::get('/studentEmergencyContact/create',['uses'=>'StudentEmergencyContactController@create','as'=>'studentEmergencyContact.create']);
 	Route::get('/studentEmergencyContact/edit/{id}',['uses'=>'StudentEmergencyContactController@edit','as'=>'studentEmergencyContact.edit']);
 	Route::post('/studentEmergencyContact/update/{id}',['uses'=>'StudentEmergencyContactController@update','as'=>'studentEmergencyContact.update']);
-	Route::post('/studentEmergencyContact/store',['uses'=>'StudentEmergencyContact@store','as'=>'studentEmergencyContact.store']);
-	Route::get('/studentEmergencyContact/delete/{id}',['uses'=>'StudentEmergencyContact@destroy','as'=>'studentEmergencyContact.destroy']);
+	Route::post('/studentEmergencyContact/store',['uses'=>'StudentEmergencyContactController@store','as'=>'studentEmergencyContact.store']);
+	Route::get('/studentEmergencyContact/delete/{id}',['uses'=>'StudentEmergencyContactController@destroy','as'=>'studentEmergencyContact.destroy']);
 
-	Route::get('/studentEmergencyContact',['uses'=>'StudentEmergencyContactController@index','as'=>'studentEmergencyContact.index']);
-	Route::get('/studentEmergencyContact/create',['uses'=>'StudentEmergencyContactController@create','as'=>'studentEmergencyContact.create']);
-	Route::get('/studentEmergencyContact/edit/{id}',['uses'=>'StudentEmergencyContactController@edit','as'=>'studentEmergencyContact.edit']);
-	Route::post('/studentEmergencyContact/update/{id}',['uses'=>'StudentEmergencyContactController@update','as'=>'studentEmergencyContact.update']);
-	Route::post('/studentEmergencyContact/store',['uses'=>'StudentEmergencyContact@store','as'=>'studentEmergencyContact.store']);
-	Route::get('/studentEmergencyContact/delete/{id}',['uses'=>'StudentEmergencyContact@destroy','as'=>'studentEmergencyContact.destroy']);
+	Route::get('/studentGradeInformation',['uses'=>'StudentGradeInformationController@index','as'=>'studentGradeInformation.index']);
+	Route::get('/studentGradeInformation/create',['uses'=>'StudentGradeInformationContactController@create','as'=>'studentGradeInformation.create']);
+	Route::get('/studentGradeInformation/edit/{id}',['uses'=>'StudentGradeInformationContactController@edit','as'=>'studentGradeInformation.edit']);
+	Route::post('/studentGradeInformation/update/{id}',['uses'=>'StudentGradeInformationContactController@update','as'=>'studentGradeInformation.update']);
+	Route::post('/studentGradeInformation/store',['uses'=>'SStudentGradeInformationController@store','as'=>'studentGradeInformation.store']);
+	Route::get('/studentGradeInformation/delete/{id}',['uses'=>'StudentGradeInformationController@destroy','as'=>'studentGradeInformation.destroy']);
 
 });
